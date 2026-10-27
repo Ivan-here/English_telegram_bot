@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "english-telegram-tutor"
+version = "0.1.0"
+description = "A voice-enabled English practice partner for Telegram"
+requires-python = ">=3.11"
+dependencies = ["openai>=2.0,<3", "python-telegram-bot>=22,<23", "python-dotenv>=1,<2"]
+
+[project.scripts]
+english-bot = "english_bot.bot:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
