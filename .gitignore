@@ -6,3 +6,12 @@ __pycache__/
 data/
 build/
 dist/
+
+docker-start.log
+docker-start.exitcode
+
+live-check.py
+
+docker-status.log
+
+models/
